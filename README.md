@@ -32,6 +32,10 @@ You can start the container directly with docker:
         -v path/to/docker-gollum/data:/data \
         .
 
+
+Advanced usage
+--------------
+
 ### fig
 
 Or you can use the `Dockerfile` with [fig](http://www.fig.sh):
