@@ -1,0 +1,5 @@
+Host your.repo.com
+    Hostname your.repo.com
+    User git
+    IdentityFile ~/.ssh/id_rsa
+    StrictHostKeyChecking no
