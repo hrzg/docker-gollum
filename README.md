@@ -30,6 +30,7 @@ You can start the container directly with docker:
         -p 9292:9292 \
         -v path/to/docker-gollum/wiki:/wiki \
         -v path/to/docker-gollum/data:/data \
+        -e REPO_URL=git@git.your.repo:path/name.git
         .
 
 
