@@ -6,6 +6,9 @@ Runs gollum/gollum in a rack webserver from a *Docker* container.
 Installation
 ------------
 
+    git clone https://github.com/hrzg/docker-gollum.git
+    cd docker-gollum
+
 Before you can start using this container you have to prepare some data files which hold your SSH keys and 
 needed configuration options.
 
