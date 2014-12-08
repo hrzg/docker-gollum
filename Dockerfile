@@ -32,6 +32,11 @@ RUN gem install --no-ri --no-rdoc \
     github-markdown \
     rack-cache
 
+# Patching grit, see https://github.com/gollum/gollum/issues/843
+RUN sed -i \
+    's/\[tmode, obj.name, sha\]/\[tmode, obj.name.force_encoding("ASCII-8BIT"), sha\]/g' \
+    /var/lib/gems/1.9.1/gems/gitlab-grit-2.7.2/lib/grit/index.rb
+
 # Initialize support files
 ADD root/crontab  /root/crontab
 ADD root/update.sh  /root/update.sh
